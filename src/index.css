@@ -55,16 +55,17 @@ html {
 #root {
   min-width: 100vw;
   min-height: 100vh;
-  background-color: #f1f0eb;
+  background-color: #77a6f7;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3rem;
+  background-color: #ffffff;
 }
 .logo {
-  color: #283e83;
+  color: #00887a;
   font-size: 1.6rem;
   font-weight: 900;
   cursor: pointer;
@@ -73,12 +74,62 @@ html {
   border: none;
   font-size: 1.1rem;
   font-weight: 700;
-  background-color: #ecd89c;
-  color: #4056a1;
+  background-color: #ffffff;
+  color: #00887a;
+  border: 2px solid #00887a;
   border-radius: 20px;
   padding: 0.4rem 1rem;
   cursor: pointer;
 }
 .leaderboard-button:hover{
-  background-color: #e7ca70;
+  background-color: #00887a;
+  color: #ffffff;
+  border: 2px solid #ffffff;} 
+.start-container {
+  display: flex;
+  flex-direction: column;
+}
+.start-title {
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+}
+.character-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.single-character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  width: 250px;
+  border-radius: 20px;
+  padding: 1rem 0;
+}
+.character-image {
+  height: 200px;
+}
+.character-name {
+  margin-top: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.start-button {
+  cursor: pointer;
+  align-self: center;
+  margin-top: 2rem;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.6rem 0.8rem;
+
 }
