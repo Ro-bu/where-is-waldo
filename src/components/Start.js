@@ -3,7 +3,7 @@ import courage from "../img/courage.png";
 import deedee from "../img/deedee.png";
 import plank from "../img/plank1.png";
 
-function Start() {
+function Start(props) {
 
     return (
         <div className="start-container">
@@ -24,7 +24,7 @@ function Start() {
                     <p className="character-name">Plank</p>
                 </div>
             </div> 
-            <button type="button" className="start-button">Start Game</button>
+            <button onClick={props.startGame} type="button" className="start-button">Start Game</button>
         </div>
     )
 }
